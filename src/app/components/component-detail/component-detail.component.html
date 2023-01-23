@@ -1,0 +1,25 @@
+<!-- Page Content -->
+<div class="mt-4 container border border-3 border-warning bg-warning-subtle">
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">{{ pokemon.name }}</h1>
+    <!-- Portfolio Item Row -->
+    <div class="row">
+  
+      <div class="col-md-8">
+        <img class="img-fluid" src="{{ pokemon.img }}" alt="">
+      </div>
+  
+      <div class="col-md-4 d-flex flex-column justify-content-center">
+        <h3>Stats</h3>
+        <div *ngFor="let stat of pokemon.stats">
+            <h3>
+                <span  class="badge rounded-pill text-bg-primary">{{ stat.stat.name }}</span>
+                <span> {{ stat.base_stat }} </span>
+            </h3>
+        </div>
+      </div>
+  
+    </div>
+    <!-- /.row -->
+</div>

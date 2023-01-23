@@ -1,0 +1,5 @@
+<ul class="list-group text-center d-flex flex-column align-items-center">
+    <li class="list-group-item list-group-item-action border border-3 border-warning my-2 mx-5" *ngFor="let pokemon of pokemons" [routerLink]="['/pokemon', pokemon.id]">
+        <span>{{ pokemon.id }}  | {{ pokemon.name }}</span>
+    </li>
+</ul>
